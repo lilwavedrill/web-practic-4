@@ -1,0 +1,110 @@
+/*  общие для всего сайта */
+body {
+    background-color: rgb(240, 242, 245);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* меню сайта  */
+nav ul {
+    /* убрать маркеры списка */
+    list-style-type: none; 
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    /* стиль ссылок меню */
+    text-decoration: none;
+    color: rgb(0, 51, 102);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: rgb(160, 120, 50);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgb(200, 200, 200);
+    margin: 20px 0;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 10px;
+}
+
+/* стили для товара */
+
+/* заголовки разделов опис. харак. и тп */
+h2.section-title {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(235, 230, 220); 
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* кратк опис товара */
+.short-desc {
+    color: rgb(80, 80, 80); 
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/* подроб опис товара */
+.detailed-desc {
+    color: rgb(20, 20, 30); 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* список характ с маркером */
+ul.char-list {
+    /* стили списка*/
+    font-family: 'Courier New', monospace;
+    color: rgb(50, 50, 100);
+    background-color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    border-radius: 10px;
+    
+    list-style-image: url('img/bullet.png'); 
+}
+
+ul.char-list li {
+    margin-bottom: 8px;
+}
+
+/* подвал */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+}

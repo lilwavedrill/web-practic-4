@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог часов</title>
+    <!-- подкл стиля -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <h1 style="text-align: center;">Каталог моделей</h1>
+
+    <!-- фильтр товаров -->
+<div style="margin-bottom: 20px;">
+    <label>Выберите категорию: </label>
+    <select id="category-filter">
+        <option value="all">Все товары</option>
+        <option value="classic">Классика</option>
+        <option value="sport">Спорт</option>
+        <option value="luxury">Люкс</option>
+    </select>
+</div>
+
+<!-- корзина -->
+<div id="cart-container" style="border: 2px solid black; padding: 10px; margin-bottom: 20px; background: #f0f0f0;">
+    <h3>Корзина</h3>
+    <ul id="cart-items">
+        <!-- сюда JS будет добавлять товары -->
+    </ul>
+    <p>Итого: <span id="total-price">0</span> руб.</p>
+    <button id="pay-btn">Оплатить</button>
+    <button id="clear-btn">Очистить корзину</button>
+</div>
+
+    <!-- юз класс .row  -->
+    <div class="row">
+
+        <div class="product" data-id="1" data-price="2500000" data-name="Calatrava 6007A" data-category="sport">
+            <h3>Calatrava Ref. 6007A</h3>
+            <img src="img/tovar.jpg" alt="Calatrava" width="150">
+            <p>Цена: 2 500 000 руб.</p>
+            <button class="add-to-cart-btn">В корзину </button>
+            <br>
+            <a href="item.html">Подробнее...</a>
+        </div>
+        <br><hr><br>
+
+
+        <div class="product" data-id="2" data-price="8000000" data-name="Grand Complications" data-category="luxury">
+            <h3>Grand Complications</h3>
+            <img src="img/tovar2.jpg" alt="Grand" width="150">
+            <p>Цена: 8 000 000 руб.</p>
+            <button class="add-to-cart-btn">В корзину</button>
+            <br>
+            <a href="item2.html">Подробнее...</a>
+        </div>
+        <br><hr><br>
+
+
+        <div class="product" data-id="3" data-price="5000000" data-name="Nautilus" data-category="classic">
+            <h3>Nautilus</h3>
+            <img src="img/tovar3.jpg" alt="Nautilus" width="150">
+            <p>Цена: 5 000 000 руб.</p>
+            <button class="add-to-cart-btn">В корзину</button>
+            <br>
+            <a href="item3.html">Подробнее...</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- подвал -->
+    <footer>
+        &copy; 2025 Watch by twitch.tv/l1lwave666. Все права защищены.
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
